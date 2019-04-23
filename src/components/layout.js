@@ -1,21 +1,19 @@
 import React, { Component } from "react"
-import Header from "./header"
-import Footer from "./footer"
-import styled from "styled-components"
+import Header from "./Header"
+import Footer from "./Footer"
 
 import GlobalStyle from "../styles/GlobalStyle"
-const LayoutStyle = styled.div``
 
 class Layout extends Component {
   render() {
     const { children } = this.props
     return (
-      <LayoutStyle>
+      <div>
         <GlobalStyle />
         <Header />
         {children}
         <Footer />
-      </LayoutStyle>
+      </div>
     )
   }
 }
