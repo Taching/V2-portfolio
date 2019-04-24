@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { getOuterSpace } from "../../styles/Utils"
 
 export const NavContainer = styled.header`
   z-index: 11;
@@ -14,7 +15,7 @@ export const NavContainer = styled.header`
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 5rem;
+  ${getOuterSpace("padding")};
 `
 export const Navbar = styled.nav`
   position: relative;
@@ -39,12 +40,10 @@ export const NavLinks = styled.ul`
   }
 `
 export const NavItemRight = styled.li`
-  margin: 0 10px;
   font-size: 0.7em;
   text-align: right !important;
 `
 export const NavItemLeft = styled.li`
-  margin: 0 10px;
   font-size: 0.7em;
   list-style: none;
 `
