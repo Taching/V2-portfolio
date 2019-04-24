@@ -2,11 +2,6 @@ import styled from "styled-components"
 import { getOuterSpace } from "../../styles/Utils"
 
 export const NavContainer = styled.header`
-  z-index: 11;
-  filter: none !important;
-  pointer-events: auto !important;
-  user-select: auto !important;
-  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -15,7 +10,9 @@ export const NavContainer = styled.header`
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  ${getOuterSpace("padding")};
+  pointer-events: none;
+  ${getOuterSpace("padding")}
+  z-index: 12;
 `
 export const Navbar = styled.nav`
   position: relative;
@@ -25,23 +22,22 @@ export const Navbar = styled.nav`
   min-height: 7em;
   width: 100%;
   color: blue;
-  counter-reset: item 0;
-  z-index: 12;
 `
 export const NavLinks = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
   width: 50%;
   max-width: 14rem;
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
   a {
-    text-decoration: none;
     color: rgb(148, 152, 158);
+    z-index: 100;
+    pointer-events: all;
   }
 `
 export const NavItemRight = styled.li`
   font-size: 0.7em;
-  text-align: right !important;
+  text-align: right;
 `
 export const NavItemLeft = styled.li`
   font-size: 0.7em;
