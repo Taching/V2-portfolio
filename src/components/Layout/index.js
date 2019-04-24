@@ -1,8 +1,8 @@
 import React, { Component } from "react"
-import Header from "./Header"
-import Footer from "./Footer"
+import Header from "../Header"
+import Footer from "../Footer"
 
-import GlobalStyle from "../styles/GlobalStyle"
+import GlobalStyle from "../../styles/GlobalStyle"
 
 class Layout extends Component {
   render() {
