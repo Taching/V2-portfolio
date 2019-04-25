@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import Layout from "../components/Layout"
 import Head from "../components/Head"
+import { BlogWrapper, BlogTitle } from "../styles/BlogStyle"
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
@@ -21,21 +22,21 @@ const BlogPage = () => {
   return (
     <Layout>
       <Head title="Blog" />
-      <ol>
+      <BlogWrapper>
         {posts.map(({ node }) => {
           const title = node.title
           const publishedDate = node.publishedDate
           const slug = node.slug
           return (
-            <ol key={slug}>
+            <BlogTitle key={slug}>
               <Link to={`/blog/${slug}`}>
                 <h2>{title}</h2>
                 <p>{publishedDate}</p>
               </Link>
-            </ol>
+            </BlogTitle>
           )
         })}
-      </ol>
+      </BlogWrapper>
     </Layout>
   )
 }

@@ -1,10 +1,20 @@
 import { css } from "styled-components"
 
-export const colors = {}
+export const color = {
+  white: "#e1e1e1",
+  black: "#212424",
+  grey100: "#848484",
+  gray200: "#7C7C7C",
+  grey300: "#585858",
+  water: "#41c7c7;",
+  salmon: "#F96B6B",
+}
 
 export const fonts = {
   sansSerif: "'Roboto', stack-sans, sans-serif",
   mono: "'Roboto Mono', stack-mono, monospace",
+  Roboto: "'Roboto Slab', serif",
+  Plex: "'IMB Plex Mono', monospace",
 }
 
 export const spaces = {

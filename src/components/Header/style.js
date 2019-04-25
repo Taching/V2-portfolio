@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { getOuterSpace } from "../../styles/Utils"
+import { getOuterSpace, color, fonts } from "../../styles/Utils"
 
 export const NavContainer = styled.header`
   position: fixed;
@@ -21,7 +21,6 @@ export const Navbar = styled.nav`
   align-items: flex-end;
   min-height: 7em;
   width: 100%;
-  color: blue;
 `
 export const NavLinks = styled.ul`
   list-style: none;
@@ -30,7 +29,10 @@ export const NavLinks = styled.ul`
   width: 50%;
   max-width: 14rem;
   a {
-    color: rgb(148, 152, 158);
+    font-family: ${fonts.Roboto};
+    font-weight: 600;
+    font-size: 1rem;
+    color: ${color.white};
     z-index: 100;
     pointer-events: all;
   }

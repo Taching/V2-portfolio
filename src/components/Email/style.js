@@ -1,5 +1,6 @@
 import styled from "styled-components"
-import { getOuterSpace } from "../../styles/Utils"
+import { getOuterSpace, color } from "../../styles/Utils"
+
 export const EmailContainer = styled.div`
   width: 40px;
   position: fixed;
@@ -29,5 +30,5 @@ export const EmailLink = styled.a`
   writing-mode: vertical-rl;
   margin: 20px auto;
   padding: 10px;
-  color: grey;
+  color: ${color.water};
 `
