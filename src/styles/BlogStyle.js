@@ -29,7 +29,7 @@ export const BlogTitle = styled.div`
 `
 
 export const BlogLayout = styled.div`
-  a,
+  p,
   h2 {
     font-family: ${fonts.roboto};
   }

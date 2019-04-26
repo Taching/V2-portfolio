@@ -43,12 +43,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "TakatoshiWada",
-        short_name: "TakatoshiWada",
+        name: "Takatoshi Wada",
+        short_name: "tachingers",
         start_url: "/",
-        background_color: "#663399",
-        theme_color: "#663399",
+        background_color: "#212424",
+        theme_color: "#212424",
         display: "minimal-ui",
+        icon: "src/content/assets/icon.png",
       },
     },
   ],
