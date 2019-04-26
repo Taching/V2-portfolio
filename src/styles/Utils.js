@@ -14,7 +14,6 @@ export const fonts = {
   sansSerif: "'Roboto', stack-sans, sans-serif",
   mono: "'Roboto Mono', stack-mono, monospace",
   Roboto: "'Roboto Slab', serif",
-  Plex: "'IMB Plex Mono', monospace",
 }
 
 export const spaces = {

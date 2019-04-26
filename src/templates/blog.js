@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/Layout"
+import Layout from "@components/Layout"
 import { BlogLayout } from "../styles/BlogStyle"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-import Head from "../components/Head"
+import Head from "@components/Head"
 // export const query = graphql`
 //   query($slug: String!) {
 //     markdownRemark(fields: { slug: { eq: $slug } }) {

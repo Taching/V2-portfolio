@@ -12,14 +12,7 @@ const Head = ({ title }) => {
       }
     }
   `)
-  return (
-    <Helmet title={`${title} | ${data.site.siteMetadata.title}`}>
-      <link
-        href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Roboto+Slab"
-        rel="stylesheet"
-      />
-    </Helmet>
-  )
+  return <Helmet title={`${title} | ${data.site.siteMetadata.title}`} />
 }
 
 export default Head

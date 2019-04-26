@@ -30,7 +30,7 @@ export const NavLinks = styled.ul`
   max-width: 14rem;
   a {
     font-family: ${fonts.Roboto};
-    font-weight: 600;
+    font-weight: 100;
     font-size: 1rem;
     color: ${color.white};
     z-index: 100;

@@ -1,17 +1,21 @@
 import { createGlobalStyle } from "styled-components"
-import { color } from "./Utils"
+import { color, fonts } from "./Utils"
 const GlobalStyle = createGlobalStyle`
 html {
-  font-family: 'Roboto Slab', serif,Helvetica Neue, sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 body {
   background: ${color.black};
+  font-family: ${fonts.Roboto};
   margin: 0px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+::selection {
+    color: ${color.water};
+    background: transparent;
+  }
 article,
 aside,
 details,
