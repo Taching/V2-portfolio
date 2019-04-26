@@ -12,6 +12,12 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // trackingId: //trackingIdlater,
+      },
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "src",
@@ -34,7 +40,15 @@ module.exports = {
             resolve: "gatsby-remark-images",
             options: {
               maxWidth: 750,
+              quality: 90,
               linkImagesToOriginal: false,
+            },
+          },
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank",
+              rel: "nofollow noopener noreferrer",
             },
           },
         ],

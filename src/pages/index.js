@@ -1,24 +1,22 @@
 import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+// import { Link, graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/Layout"
 import Head from "../components/Head"
-
+import Intro from "@components/Intro"
 const IndexPage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          description
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     site {
+  //       siteMetadata {
+  //         description
+  //       }
+  //     }
+  //   }
+  // `)
   return (
     <Layout>
       <Head title="Home" />
-      <h1>Hello</h1>
-      <h2>{data.site.siteMetadata.description}</h2>
-      <Link to="/about">About me.</Link>
+      <Intro fixed={true} />
     </Layout>
   )
 }
