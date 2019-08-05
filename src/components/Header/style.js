@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { getOuterSpace, color, fonts } from "../../styles/Utils"
+import { getOuterSpace, color, media } from "../../styles/Utils"
 
 export const NavContainer = styled.header`
   position: fixed;
@@ -29,7 +29,6 @@ export const NavLinks = styled.ul`
   width: 50%;
   max-width: 14rem;
   a {
-    font-family: ${fonts.Roboto};
     font-weight: 100;
     font-size: 1rem;
     color: ${color.white};
@@ -44,4 +43,7 @@ export const NavItemRight = styled.li`
 export const NavItemLeft = styled.li`
   font-size: 0.7em;
   list-style: none;
+  ${media.md`
+    display: none;
+  `}
 `
