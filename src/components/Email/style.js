@@ -30,5 +30,5 @@ export const EmailLink = styled.a`
   writing-mode: vertical-rl;
   margin: 20px auto;
   padding: 10px;
-  color: ${color.water};
+  color: ${color.Mint};
 `

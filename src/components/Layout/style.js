@@ -2,10 +2,10 @@ import styled from "styled-components"
 import { media, color, fonts } from "../../styles/Utils"
 
 export const LayoutStyle = styled.div`
-  margin: 11rem auto 5rem;
+  margin: 8rem auto 5rem;
   max-width: 50rem;
-  color: ${color.white};
-  font-family: ${fonts.sansSerif};
+  color: ${color.Gray6};
+  font-family: ${fonts.Source};
   width: calc(100% - 8.25rem * 2);
   margin: 11rem auto 5rem;
     ${media.lg`

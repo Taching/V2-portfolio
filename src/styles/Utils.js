@@ -1,19 +1,22 @@
 import { css } from "styled-components"
 
 export const color = {
-  white: "#e1e1e1",
-  black: "#212424",
-  grey100: "#848484",
-  gray200: "#7C7C7C",
-  grey300: "#585858",
-  water: "#41c7c7;",
-  salmon: "#F96B6B",
+  //Brand
+  MossGreen: "#00CC83",
+  Mint: "#53E0BD",
+  //Grey Scale
+  white: "#FFF",
+  Gray1: "#EEE",
+  Gray2: "#ddd",
+  Gray3: "#BBB",
+  Gray4: "#888",
+  Gray5: "#777",
+  Gray6: "#454545",
+  Black: "#000000",
 }
 
 export const fonts = {
-  sansSerif: "'Roboto', stack-sans, sans-serif",
-  mono: "'Roboto Mono', stack-mono, monospace",
-  Roboto: "'Roboto Slab', serif",
+  Source: "'Source Sans Pro', sans-serif",
 }
 
 export const spaces = {

@@ -21,7 +21,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ["Roboto Slab", "Roboto Mono"],
+          families: ["Source Sans Pro", "sans-serif"],
         },
       },
     },
@@ -68,8 +68,8 @@ module.exports = {
         name: "Takatoshi Wada",
         short_name: "tachingers",
         start_url: "/",
-        background_color: "#212424",
-        theme_color: "#212424",
+        background_color: "#343434",
+        theme_color: "#000",
         display: "minimal-ui",
         icon: "src/content/assets/icon.png",
       },

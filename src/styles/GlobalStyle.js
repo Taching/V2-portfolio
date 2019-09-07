@@ -6,8 +6,8 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  background: ${color.black};
-  font-family: ${fonts.Roboto};
+  background: ${color.Black};
+  font-family: ${fonts.Source};
   margin: 0px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -103,7 +103,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace, 'Roboto Slab', serif;
+  font-family: 'Source sans Pro', sans-serif, serif;
   font-size: 1em;
 }
 figure {
@@ -194,7 +194,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
+  font: 100%/1.45em georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -209,7 +209,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: sans-serif, 'Roboto Slab', serif;
+  font-family: sans-serif, 'Source Sans Pro', serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -239,7 +239,7 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Roboto Slab', serif,Helvetica Neue, sans-serif;
+  font-family: 'Source Sans Pro', serif,Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
@@ -255,7 +255,7 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Roboto Slab', serif,Helvetica Neue, sans-serif;
+  font-family: 'Source Sans Pro', serif,Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
@@ -271,7 +271,7 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Roboto Slab', serif,Helvetica Neue, sans-serif;
+  font-family: 'Source Sans Pro', serif,Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
@@ -287,7 +287,7 @@ h4 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Roboto Slab', serif,Helvetica Neue, sans-serif;
+  font-family: 'Source Sans Pro', serif,Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
@@ -303,7 +303,7 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Roboto Slab', serif,Helvetica Neue, sans-serif;
+  font-family: 'Source Sans Pro', serif,Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
@@ -319,7 +319,7 @@ h6 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Roboto Slab', serif,Helvetica Neue, sans-serif;
+  font-family: 'Source Sans Pro', serif,Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
@@ -595,7 +595,7 @@ tt,
 code {
   background-color: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
-  font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
+  font-family: "SFMono-Regular", Consolas, "Source Sans Pro", "Droid Sans Mono",
     "Liberation Mono", Menlo, Courier, monospace;
   padding: 0;
   padding-top: 0.2em;

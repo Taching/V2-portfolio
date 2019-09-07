@@ -7,7 +7,7 @@ export const BlogWrapper = styled.div`
 
 export const BlogTitle = styled.div`
   font-family: sans-serif;
-  border-bottom: 1px dotted ${color.salmon};
+  border-bottom: 1px dotted ${color.Mint};
   a {
     padding: 10px;
     display: flex;
@@ -16,7 +16,7 @@ export const BlogTitle = styled.div`
   }
   h2,
   p {
-    font-family: ${fonts.Roboto};
+    font-family: ${fonts.Source};
     margin: 0px;
     color: ${color.white};
   }
@@ -31,6 +31,6 @@ export const BlogTitle = styled.div`
 export const BlogLayout = styled.div`
   p,
   h2 {
-    font-family: ${fonts.roboto};
+    font-family: ${fonts.Source};
   }
 `

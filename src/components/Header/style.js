@@ -31,7 +31,7 @@ export const NavLinks = styled.ul`
   a {
     font-weight: 100;
     font-size: 1rem;
-    color: ${color.white};
+    color: ${color.MossGreen};
     z-index: 100;
     pointer-events: all;
   }

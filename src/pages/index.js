@@ -3,16 +3,8 @@ import React from "react"
 import Layout from "@components/Layout"
 import Head from "@components/Head"
 import Intro from "@components/Intro"
-const IndexPage = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     site {
-  //       siteMetadata {
-  //         description
-  //       }
-  //     }
-  //   }
-  // `)
+import PropTypes from "prop-types"
+const IndexPage = ({ data }) => {
   return (
     <Layout>
       <Head title="Home" />
@@ -20,5 +12,36 @@ const IndexPage = () => {
     </Layout>
   )
 }
-
 export default IndexPage
+
+IndexPage.prototype = {
+  data: PropTypes.object.isRequired,
+}
+
+export const query = graphql`
+  query IndexQuery {
+    index: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/index/" } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            skills
+            avatar {
+              childImageSharp {
+                fluid(
+                  maxWidth: 700
+                  quality: 90
+                  traceSVG: { color: "#64ffda" }
+                ) {
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`
