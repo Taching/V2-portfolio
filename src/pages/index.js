@@ -1,33 +1,30 @@
 import React from "react"
-// import { Link, graphql, useStaticQuery } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "@components/Layout"
 import Head from "@components/Head"
-import Intro from "@components/Intro"
+import Hero from "@components/Hero"
 import PropTypes from "prop-types"
 const IndexPage = ({ data }) => {
   return (
     <Layout>
       <Head title="Home" />
-      <Intro fixed={true} />
+      <Hero data={data.hero.edges} />
     </Layout>
   )
 }
-export default IndexPage
-
 IndexPage.prototype = {
   data: PropTypes.object.isRequired,
 }
+export default IndexPage
 
-export const query = graphql`
-  query IndexQuery {
-    index: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/index/" } }
-    ) {
+export const pageQuery = graphql`
+  {
+    hero: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/hero/" } }) {
       edges {
         node {
           frontmatter {
             title
-            skills
+            date
             avatar {
               childImageSharp {
                 fluid(

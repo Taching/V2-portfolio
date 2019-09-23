@@ -15,9 +15,9 @@ class Profile extends Component {
       <div>
         <h1>{title}</h1>
         <SkillsContainer>
-          {/* {skills.map((skill, i) => (
+          {skills.map((skill, i) => (
             <Skill key={i}>{skill}</Skill>
-          ))} */}
+          ))}
         </SkillsContainer>
         <PicContainer>
           <Avatar fluid={avatar.childImageSharp.fluid} alt="Avatar" />
