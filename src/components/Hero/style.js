@@ -42,3 +42,6 @@ export const Title = styled.h1`
     text-decoration: line-through;
   }
 `
+export const HeroStyle = styled.div`
+  height: 500px;
+`

@@ -12,7 +12,7 @@ export const color = {
   Gray4: "#888",
   Gray5: "#777",
   Gray6: "#454545",
-  Black: "#000000",
+  Black: "#1f211c",
 }
 
 export const fonts = {
