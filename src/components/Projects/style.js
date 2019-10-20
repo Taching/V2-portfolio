@@ -13,7 +13,7 @@ export const ProjectContainer = styled.div`
     width: 400px;
     position: absolute;
     left: 0px;
-    transition: all 0.5s ease;
+    transition: all 0.9s linear;
   }
 `
 export const ProjectList = styled.ul`
@@ -35,10 +35,22 @@ export const Projects = styled.li`
     border-bottom: none;
   }
   a {
+    color: ${color.white};
+    text-decoration: none;
     font-size: 3rem;
     width: auto;
   }
   p {
+    margin-top: 10px;
     color: ${color.MossGreen};
+    background-color: ${color.Black2};
+    width: max-content;
+  }
+`
+export const MoveLeft = styled.div`
+  transition: transform 0.7s linear;
+  :hover {
+    opacity: 1;
+    transform: translate(25px, 0px);
   }
 `

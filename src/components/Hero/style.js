@@ -37,11 +37,14 @@ export const Wrapper = styled.div`
 `
 
 export const Title = styled.h1`
-  span {
-    color: ${color.white};
-    text-decoration: line-through;
-  }
+  color: ${color.white};
 `
 export const HeroStyle = styled.div`
-  height: 500px;
+  height: 300px;
+  p {
+    color: ${color.MossGreen};
+    background-color: ${color.Black2};
+    text-decoration: line-through;
+    width: max-content;
+  }
 `
