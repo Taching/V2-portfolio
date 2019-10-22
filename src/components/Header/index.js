@@ -4,7 +4,7 @@ import {
   NavContainer,
   Navbar,
   NavLinks,
-  NavItemLeft,
+  // NavItemLeft,
   NavItemRight,
 } from "./style"
 const Header = () => {
@@ -12,20 +12,7 @@ const Header = () => {
     <NavContainer>
       <Navbar>
         {/* LEFT MENU */}
-        <NavLinks>
-          <NavItemLeft>
-            <Link to="/">Instagram</Link>
-          </NavItemLeft>
-          <NavItemLeft>
-            <Link to="/about">Wantedly</Link>
-          </NavItemLeft>
-          <NavItemLeft>
-            <Link to="/blog">LinkedIn</Link>
-          </NavItemLeft>
-          <NavItemLeft>
-            <Link to="/contact">Github</Link>
-          </NavItemLeft>
-        </NavLinks>
+        <NavLinks></NavLinks>
         {/* RIGHT MENU */}
         <NavLinks>
           <NavItemRight>

@@ -36,15 +36,24 @@ export const Wrapper = styled.div`
         `}
 `
 
-export const Title = styled.h1`
-  color: ${color.white};
-`
 export const HeroStyle = styled.div`
   height: 300px;
-  p {
-    color: ${color.MossGreen};
-    background-color: ${color.Black2};
-    text-decoration: line-through;
-    width: max-content;
-  }
+`
+export const Name = styled.h1`
+  color: ${color.MossGreen};
+  background-color: ${color.Black2};
+  font-weight: 200;
+  font-size: 3rem;
+  width: max-content;
+`
+export const Title = styled.p`
+  color: ${color.Mint};
+  font-size: 1.5rem;
+`
+export const Sub = styled.span`
+  color: ${color.white};
+  font-size: 1.3rem;
+`
+export const Social = styled.ul`
+  list-style: none;
 `

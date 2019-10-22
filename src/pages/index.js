@@ -26,8 +26,9 @@ export const pageQuery = graphql`
       edges {
         node {
           frontmatter {
+            name
             title
-            date
+            sub
             avatar {
               childImageSharp {
                 fluid(

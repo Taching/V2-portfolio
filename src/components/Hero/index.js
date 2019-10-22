@@ -1,17 +1,17 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Button from "@material-ui/core/Button"
-import { HeroStyle, Title } from "./style.js"
+import { HeroStyle, Title, Sub, Name, Social } from "./style.js"
 
 const Hero = ({ data }) => {
   const { frontmatter } = data[0].node
   return (
     <HeroStyle>
+      <Name>{frontmatter.name}</Name>
       <Title>{frontmatter.title}</Title>
-      <p>{frontmatter.date}</p>
-      <Button variant="contained" color="primary">
-        Hello World
-      </Button>
+      <Sub>{frontmatter.sub}</Sub>
+      <Social>
+        <div icon="check-square"></div>
+      </Social>
     </HeroStyle>
   )
 }
