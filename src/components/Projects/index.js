@@ -9,6 +9,10 @@ class Project extends Component {
     hover: false,
   }
   render() {
+    console.log(this.state.hover)
+    const image1 = require("../../content/assets/image1.jpeg")
+    const image2 = require("../../content/assets/image2.jpeg")
+    const image3 = require("../../content/assets/image3.jpeg")
     return (
       <ProjectContainer
         onMouseOut={() => {
@@ -29,12 +33,11 @@ class Project extends Component {
         </CSSTransition>
         <ProjectList>
           <Projects
-            onMouseEnter={() => {
+            onMouseOver={() => {
               this.setState({
                 hover: !this.state.hover,
                 alt: "AgogeSystem",
-                img:
-                  "https://images.unsplash.com/photo-1507494924047-60b8ee826ca9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1332&q=80z",
+                img: image1,
               })
             }}
           >
@@ -44,12 +47,11 @@ class Project extends Component {
             </MoveLeft>
           </Projects>
           <Projects
-            onMouseEnter={() => {
+            onMouseOver={() => {
               this.setState({
                 hover: !this.state.hover,
                 alt: "Foriio",
-                img:
-                  "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
+                img: image2,
               })
             }}
           >
@@ -59,12 +61,11 @@ class Project extends Component {
             </MoveLeft>
           </Projects>
           <Projects
-            onMouseEnter={() => {
+            onMouseOver={() => {
               this.setState({
                 hover: !this.state.hover,
                 alt: "FreewillFreespace",
-                img:
-                  "https://images.unsplash.com/photo-1507486990559-1d65aaad9ba6?ixlib=rb-1.2.1&auto=format&fit=crop&w=975&q=80",
+                img: image3,
               })
             }}
           >

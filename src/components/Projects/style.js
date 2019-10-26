@@ -40,6 +40,12 @@ export const Projects = styled.li`
     font-size: 3rem;
     width: auto;
   }
+  a:hover {
+    background-color: ${color.MossGreen};
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+  }
   p {
     margin-top: 10px;
     color: ${color.MossGreen};
