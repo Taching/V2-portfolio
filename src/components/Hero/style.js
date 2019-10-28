@@ -35,9 +35,13 @@ export const Wrapper = styled.div`
           text-align: left;
         `}
 `
-
+export const Avatar = styled.img`
+  position: relative;
+  mix-blend-mode: multiply;
+  filter: grayscale(100%) contrast(1);
+`
 export const HeroStyle = styled.div`
-  height: 300px;
+  height: 100vh;
 `
 export const Name = styled.h1`
   color: ${color.MossGreen};
