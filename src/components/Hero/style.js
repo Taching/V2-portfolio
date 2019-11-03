@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components"
 import { color, media, getOuterSpace } from "../../styles/Utils"
-
+import Img from "gatsby-image"
 export const Wrapper = styled.div`
   font-size: 1.7rem;
   max-width: 36rem;
@@ -35,29 +35,44 @@ export const Wrapper = styled.div`
           text-align: left;
         `}
 `
-export const Avatar = styled.img`
+export const Avatar = styled(Img)`
   position: relative;
   mix-blend-mode: multiply;
   filter: grayscale(100%) contrast(1);
 `
+export const AvatarContainer = styled.div`
+  height: 500px;
+  width: 410px;
+  position: absolute;
+  right: 290px;
+  top: -90px;
+  z-index: -1;
+`
 export const HeroStyle = styled.div`
-  height: 40vh;
+  height: 90vh;
 `
 export const Name = styled.h1`
-  color: ${color.MossGreen};
-  background-color: ${color.Black2};
-  font-weight: 200;
-  font-size: 3rem;
+  color: ${color.white};
+  margin-bottom: 13px;
+  font-weight: bold;
+  font-size: 2rem;
   width: max-content;
 `
 export const Title = styled.p`
-  color: ${color.Mint};
+  color: ${color.white};
   font-size: 1.5rem;
 `
 export const Sub = styled.span`
-  color: ${color.white};
+  color: ${color.Gray3};
   font-size: 1.3rem;
 `
 export const Social = styled.ul`
   list-style: none;
+`
+export const Bar = styled.div`
+  width: 70px;
+  height: 1px;
+  border-bottom: 1px solid #fff;
+  margin-top: 20px;
+  margin-bottom: 40px;
 `

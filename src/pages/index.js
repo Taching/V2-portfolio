@@ -27,7 +27,9 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             name
-            title
+            intro1
+            intro2
+            intro3
             sub
             avatar {
               childImageSharp {
