@@ -24,3 +24,6 @@ export const LayoutStyle = styled.div`
       padding: 0 2rem 6rem;
     `}
 `
+export const ReactFragment = styled.div`
+  position: relative;
+`

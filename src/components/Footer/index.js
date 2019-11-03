@@ -1,10 +1,18 @@
 import React from "react"
+import { FooterStyle } from "./style"
 
 const Footer = () => {
   return (
-    <footer>
-      <p>Created by Takatoshi Wada, copyright 2019</p>
-    </footer>
+    <FooterStyle>
+      <p>
+        Made with{" "}
+        <span role="img" aria-label="heart">
+          ❤️
+        </span>
+        using
+      </p>
+      <a href="https://www.gatsbyjs.org/"> GatsbyJS</a>
+    </FooterStyle>
   )
 }
 

@@ -5,17 +5,14 @@ import Head from "@components/Head"
 import Hero from "@components/Hero"
 import Projects from "@components/Projects"
 import PropTypes from "prop-types"
-import { ParallaxProvider } from "react-scroll-parallax"
 
 const IndexPage = ({ data }) => {
   return (
-    <ParallaxProvider>
-      <Layout>
-        <Head title="Home" />
-        <Hero data={data.hero.edges} />
-        <Projects />
-      </Layout>
-    </ParallaxProvider>
+    <Layout>
+      <Head title="Home" />
+      <Hero data={data.hero.edges} />
+      <Projects />
+    </Layout>
   )
 }
 IndexPage.prototype = {

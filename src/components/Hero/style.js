@@ -41,7 +41,7 @@ export const Avatar = styled.img`
   filter: grayscale(100%) contrast(1);
 `
 export const HeroStyle = styled.div`
-  height: 100vh;
+  height: 40vh;
 `
 export const Name = styled.h1`
   color: ${color.MossGreen};

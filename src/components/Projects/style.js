@@ -28,7 +28,7 @@ export const ProjectList = styled.ul`
 `
 export const Projects = styled.li`
   color: ${color.white};
-  border-bottom: 1px solid ${color.white};
+  border-bottom: 1px solid ${color.Mint};
   padding: 15px 0px;
   width: 500px;
   :last-child {

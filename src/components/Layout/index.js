@@ -1,19 +1,22 @@
 import React, { Component } from "react"
 import Header from "../Header"
 import Email from "../Email"
-import { LayoutStyle } from "./style"
+import { LayoutStyle, ReactFragment } from "./style"
 import GlobalStyle from "../../styles/GlobalStyle"
-
+import Footer from "../Footer"
 class Layout extends Component {
   render() {
     const { children } = this.props
     return (
-      <LayoutStyle>
-        <Header />
-        <GlobalStyle />
-        {children}
-        <Email />
-      </LayoutStyle>
+      <ReactFragment>
+        <LayoutStyle>
+          <Header />
+          <GlobalStyle />
+          {children}
+          <Email />
+        </LayoutStyle>
+        <Footer />
+      </ReactFragment>
     )
   }
 }

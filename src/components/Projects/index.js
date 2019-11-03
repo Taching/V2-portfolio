@@ -9,7 +9,6 @@ class Project extends Component {
     hover: false,
   }
   render() {
-    console.log(this.state.hover)
     const image1 = require("../../content/assets/image1.jpeg")
     const image2 = require("../../content/assets/image2.jpeg")
     const image3 = require("../../content/assets/image3.jpeg")
