@@ -44,7 +44,7 @@ export const AvatarContainer = styled.div`
   height: 500px;
   width: 410px;
   position: absolute;
-  right: 290px;
+  right: 20%;
   top: -90px;
   z-index: -1;
 `
@@ -72,7 +72,7 @@ export const Social = styled.ul`
 export const Bar = styled.div`
   width: 70px;
   height: 1px;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid ${color.Mint};
   margin-top: 20px;
   margin-bottom: 40px;
 `

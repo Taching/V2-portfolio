@@ -8,6 +8,7 @@
     "build": "gatsby build",
     "develop": "env-cmd .env gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
+    "svgr": "svgr -d src/Icons/ assets/",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
@@ -48,6 +49,7 @@
     "ts-pnp": "^1.1.2"
   },
   "devDependencies": {
+    "@svgr/cli": "^4.3.3",
     "env-cmd": "^8.0.2",
     "eslint": "^5.16.0",
     "eslint-loader": "^2.1.2",

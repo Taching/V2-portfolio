@@ -9,4 +9,5 @@ skills:
   - Node.js
   - Express
   - GraphQL
+me: "Im a simple guy who loves to laugh and allergic to luxurius events, A proud Pawrent to berry. "
 ---

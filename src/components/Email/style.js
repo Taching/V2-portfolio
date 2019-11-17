@@ -4,7 +4,7 @@ import { getOuterSpace, color } from "../../styles/Utils"
 export const EmailContainer = styled.div`
   width: 40px;
   position: fixed;
-  bottom: 20%;
+  bottom: 6.3%;
   ${getOuterSpace("right")};
   div {
     width: 100%;
@@ -20,9 +20,9 @@ export const EmailLinkWrapper = styled.div`
     content: "";
     display: block;
     width: 1px;
-    height: 90px;
+    height: 50px;
     margin: 0 auto;
-    background-color: grey;
+    background-color: ${color.Mint};
   }
 `
 export const EmailLink = styled.a`

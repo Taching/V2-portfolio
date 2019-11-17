@@ -43,7 +43,15 @@ export const NavItemRight = styled.li`
 export const NavItemLeft = styled.li`
   font-size: 0.7em;
   list-style: none;
-  ${media.md`
-    display: none;
-  `}
+  margin: 0px;
+  height: 52px;
+`
+
+export const Socialinks = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 10px;
+  bottom: -50%;
 `
