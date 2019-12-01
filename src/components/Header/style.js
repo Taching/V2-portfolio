@@ -39,19 +39,8 @@ export const NavLinks = styled.ul`
 export const NavItemRight = styled.li`
   font-size: 0.7em;
   text-align: right;
-`
-export const NavItemLeft = styled.li`
-  font-size: 0.7em;
-  list-style: none;
-  margin: 0px;
-  height: 52px;
-`
-
-export const Socialinks = styled.ul`
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  right: 50px;
-  bottom: 0;
+  .active {
+    color: white;
+    text-decoration: line-through ${color.MossGreen};
+  }
 `

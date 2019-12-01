@@ -14,6 +14,9 @@ export const ProjectContainer = styled.div`
     position: absolute;
     left: 0px;
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    ${media.md`
+      left: 150px;
+    `}
     ${media.sm`
       display: none;
     `}

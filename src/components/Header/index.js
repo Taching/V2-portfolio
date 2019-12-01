@@ -11,10 +11,14 @@ const Header = () => {
         {/* RIGHT MENU */}
         <NavLinks>
           <NavItemRight>
-            <Link to="/">Home</Link>
+            <Link activeClassName="active" to="/">
+              Home
+            </Link>
           </NavItemRight>
           <NavItemRight>
-            <Link to="/about">About</Link>
+            <Link activeClassName="active" to="/about">
+              About
+            </Link>
           </NavItemRight>
           <NavItemRight>
             <Link to="/blog">Blog</Link>

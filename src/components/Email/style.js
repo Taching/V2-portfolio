@@ -4,13 +4,13 @@ import { media, color } from "../../styles/Utils"
 export const EmailContainer = styled.div`
   width: 40px;
   position: fixed;
-  bottom: 6.3%;
+  bottom: 50px;
   left: 1rem;
   div {
     width: 100%;
     margin: 0 auto;
   }
-  ${media.md`
+  ${media.sm`
     display: none;
   `}
 `
@@ -23,9 +23,9 @@ export const EmailLinkWrapper = styled.div`
     content: "";
     display: block;
     width: 1px;
-    height: 50px;
+    height: 70px;
     margin: 0 auto;
-    background-color: ${color.Mint};
+    background-color: ${color.MossGreen};
   }
 `
 export const EmailLink = styled.a`
@@ -33,5 +33,5 @@ export const EmailLink = styled.a`
   writing-mode: vertical-rl;
   margin: 20px auto;
   padding: 10px;
-  color: ${color.Mint};
+  color: ${color.MossGreen};
 `

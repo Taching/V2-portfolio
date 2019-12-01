@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { media } from "../../styles/Utils"
+import { media, color } from "../../styles/Utils"
 
 export const SocialMediaContainer = styled.ul`
   position: fixed;
@@ -8,6 +8,23 @@ export const SocialMediaContainer = styled.ul`
   flex-direction: column;
   bottom: 50px;
   list-style: none;
+  margin: 0px;
+  ${media.sm`
+    margin: 0;
+    width: 100%;
+    justify-content: space-evenly;
+  `}
+  &:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 70px;
+    margin: 0 auto;
+    background-color: ${color.MossGreen};
+    ${media.sm`
+        display: none;
+    `}
+  }
   ${media.lg`
     right: 50px;
   `}
@@ -25,6 +42,6 @@ export const SocialMediaContainer = styled.ul`
 export const MediaItem = styled.li`
   text-decoration: none;
   ${media.sm`
-    margin-right: 20px;
+    margin-bottom: 20px;
   `}
 `

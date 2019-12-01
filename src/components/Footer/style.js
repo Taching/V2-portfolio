@@ -6,7 +6,6 @@ export const FooterStyle = styled.div`
   display: flex;
   justify-content: center;
   padding: 15px;
-
   p {
     margin-right: 5px;
     color: ${color.white};

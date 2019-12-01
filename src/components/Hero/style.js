@@ -58,6 +58,9 @@ export const Text = styled.h1`
     font-weight: 100;
     font-size: 1.5rem;
   `}
+  ${media.sm`
+    font-size: 1.3rem;
+  `}
 `
 export const Title = styled.p`
   color: ${color.white};
