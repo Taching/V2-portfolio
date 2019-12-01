@@ -45,3 +45,18 @@
 //     }
 //   }
 // `
+import React from "react"
+
+import Layout from "@components/Layout"
+import Head from "@components/Head"
+
+const About = () => {
+  return (
+    <Layout>
+      <Head />
+      <h1>sorry, im still building it..</h1>
+    </Layout>
+  )
+}
+
+export default About

@@ -20,7 +20,7 @@ const Header = () => {
             <Link to="/blog">Blog</Link>
           </NavItemRight>
           <NavItemRight>
-            <Link to="/resume">Resume</Link>
+            <Link>Resume</Link>
           </NavItemRight>
         </NavLinks>
       </Navbar>
