@@ -15,7 +15,7 @@ import {
 
 const Hero = ({ data }) => {
   const { frontmatter } = data[0].node
-  const { name, intro1, intro2, intro3, sub, avatar } = frontmatter
+  const { intro1, intro2, intro3, sub, avatar } = frontmatter
   return (
     <HeroStyle>
       {/* Large Screen */}

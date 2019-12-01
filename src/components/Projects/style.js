@@ -20,17 +20,18 @@ export const ProjectContainer = styled.div`
   }
 `
 export const BgText = styled.span`
-  color: ${color.Mint};
+  color: ${color.white};
   letter-spacing: 10px;
   position: absolute;
   letter-spacing: -6px;
   position: absolute;
   font-size: 4rem;
-  opacity: 0.6;
+  height: 10px;
   top: -75px;
   left: -100px;
+  background-color: ${color.MossGreen};
   :before {
-    content: "Projects.js";
+    content: "WORKS";
   }
   ${media.lg`
     font-size: 4rem;
@@ -40,6 +41,7 @@ export const BgText = styled.span`
     top: 0;
     left: 0;
     font-size: 1.8rem;
+    font-weight: 600;
     letter-spacing: 0px;
     margin-left: 20px;
   `}
@@ -81,18 +83,44 @@ export const Projects = styled.li`
     text-decoration: none;
     font-size: 3rem;
     width: auto;
+    position: relative;
+    overflow: hidden;
+    ::after {
+      height: 100%;
+      left: -20%;
+      top: 0;
+      clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0% 100%);
+      transition-duration: 0.6s;
+      transform-origin: top left;
+      width: 0;
+    }
+    :hover:after {
+      height: 100%;
+      width: 120%;
+    }
+    ::before,
+    ::after {
+      background: ${color.MossGreen};
+      content: "";
+      position: absolute;
+      z-index: -1;
+      ${media.sm`
+        background: none;
+      `}
+    }
     ${media.md`
       font-size: 1.8rem;
     `}
   }
-  a:hover {
-    background-color: ${color.MossGreen};
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
-    ${media.md`
-      transition: none;
-    `}
+  a,
+  a::after {
+    -webkit-transition: all 0.8;
+    -moz-transition: all 0.8;
+    -o-transition: all 0.8;
+    transition: all 0.8;
+    ${media.sm`
+     transition: none;
+  `}
   }
   p {
     margin-top: 10px;
@@ -109,11 +137,12 @@ export const MoveLeft = styled.div`
   :hover {
     opacity: 1;
     transform: translate(25px, 0px);
-    ${media.md`
+    ${media.sm`
       transform: none;
+      transition: none;
     `}
   }
-  ${media.md`
+  ${media.sm`
      transition: none;
   `}
 `

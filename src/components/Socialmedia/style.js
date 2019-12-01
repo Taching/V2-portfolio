@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { media } from "../../styles/Utils"
+import { media, color } from "../../styles/Utils"
 
 export const SocialMediaContainer = styled.ul`
   position: fixed;

@@ -20,11 +20,12 @@ export const HeroLg = styled.div`
 export const Avatar = styled(Img)`
   position: relative;
   mix-blend-mode: multiply;
-  filter: grayscale(50%) contrast(1);
+  filter: drop-shadow(16px 16px 0px ${color.MossGreen});
   ${media.md`
     border-radius: 50%;
     height: 200px;
     width: 200px;
+    filter: none;
   `}
   ${media.sm`
     border-radius: 50%;
@@ -77,17 +78,18 @@ export const Bar = styled.div`
   margin-bottom: 40px;
 `
 export const BgText = styled.span`
-  color: ${color.Mint};
+  color: ${color.white};
+  height: 10px;
   letter-spacing: 10px;
   position: absolute;
   letter-spacing: -6px;
   position: absolute;
   font-size: 4rem;
-  opacity: 0.6;
+  background-color: ${color.MossGreen};
   left: -90px;
   top: -85px;
   :before {
-    content: "Hero.js";
+    content: "WHO";
   }
   ${media.lg`
     font-size: 4rem;
@@ -95,6 +97,7 @@ export const BgText = styled.span`
   `}
   ${media.md`
     font-size: 1.8rem;
+    font-weight: 600;
     left: 20px;
     top: 0;
     letter-spacing: 0px;

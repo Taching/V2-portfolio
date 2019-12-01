@@ -76,7 +76,7 @@ class Project extends Component {
             }}
           >
             <MoveLeft>
-              <a href="foriio.com">03. Freewill Freespace</a>
+              <a href="foriio.com">03. Freewill</a>
               <p>[ Vue.JS, Nuxt.JS, Django ]</p>
             </MoveLeft>
           </Projects>

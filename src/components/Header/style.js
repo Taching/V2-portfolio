@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { getOuterSpace, color, media } from "../../styles/Utils"
+import { getOuterSpace, color } from "../../styles/Utils"
 
 export const NavContainer = styled.header`
   position: fixed;
