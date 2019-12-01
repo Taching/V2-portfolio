@@ -1,15 +1,18 @@
 import styled from "styled-components"
-import { getOuterSpace, color } from "../../styles/Utils"
+import { media, color } from "../../styles/Utils"
 
 export const EmailContainer = styled.div`
   width: 40px;
   position: fixed;
   bottom: 6.3%;
-  ${getOuterSpace("right")};
+  left: 1rem;
   div {
     width: 100%;
     margin: 0 auto;
   }
+  ${media.md`
+    display: none;
+  `}
 `
 export const EmailLinkWrapper = styled.div`
   display: flex;

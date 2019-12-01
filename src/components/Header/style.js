@@ -52,6 +52,6 @@ export const Socialinks = styled.ul`
   padding: 0;
   margin: 0;
   position: absolute;
-  left: 10px;
-  bottom: -50%;
+  right: 50px;
+  bottom: 0;
 `

@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import Header from "../Header"
 import Email from "../Email"
+import Socialmedia from "../Socialmedia"
 import { LayoutStyle, ReactFragment } from "./style"
 import GlobalStyle from "../../styles/GlobalStyle"
 import Footer from "../Footer"
@@ -14,6 +15,7 @@ class Layout extends Component {
           <GlobalStyle />
           {children}
           <Email />
+          <Socialmedia />
         </LayoutStyle>
         <Footer />
       </ReactFragment>

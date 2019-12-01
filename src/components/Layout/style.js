@@ -15,13 +15,12 @@ export const LayoutStyle = styled.div`
 
     ${media.md`
       width: 100%;
-      margin: 4rem auto 0;
-      padding: 0 3rem 6rem;
+      margin: 3rem auto 5rem;
     `}
 
     ${media.sm`
-      margin: 2rem auto 0;
-      padding: 0 2rem 6rem;
+    width: 100%;
+      margin: 3rem auto 5rem;
     `}
 `
 export const ReactFragment = styled.div`

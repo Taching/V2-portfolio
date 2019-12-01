@@ -1,5 +1,11 @@
 import React, { Component } from "react"
-import { ProjectContainer, ProjectList, Projects, MoveLeft } from "./style"
+import {
+  ProjectContainer,
+  ProjectList,
+  Projects,
+  MoveLeft,
+  BgText,
+} from "./style"
 import { CSSTransition } from "react-transition-group"
 import "./animation.css"
 class Project extends Component {
@@ -22,6 +28,7 @@ class Project extends Component {
           })
         }}
       >
+        <BgText />
         <CSSTransition
           in={this.state.hover}
           classNames="example"
