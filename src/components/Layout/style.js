@@ -8,6 +8,9 @@ export const LayoutStyle = styled.div`
   font-family: ${fonts.Source};
   width: calc(100% - 8.25rem * 2);
   margin: 11rem auto 5rem;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
     ${media.lg`
       margin: 8rem auto 3rem;
       width: calc(100% - 11rem * 2);
