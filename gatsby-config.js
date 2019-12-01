@@ -4,6 +4,7 @@ module.exports = {
   siteMetadata: {
     title: config.siteTitle,
     siteUrl: config.siteUrl,
+    name: config.name,
     description: config.siteDescription,
   },
   plugins: [
@@ -23,6 +24,12 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // trackingId: //trackingIdlater,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-html-attributes",
+      options: {
+        lang: "en",
       },
     },
     {
