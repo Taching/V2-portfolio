@@ -31,6 +31,10 @@ export const pageQuery = graphql`
             intro2
             intro3
             sub
+            surf
+            guitar
+            climbing
+            lifting
             avatar {
               childImageSharp {
                 fluid(

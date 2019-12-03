@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { color } from "../../styles/Utils"
+import { color } from "@color"
 export const FooterStyle = styled.div`
   height: 50px;
   background-color: ${color.Gray6};

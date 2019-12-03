@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components"
-import { color, fonts } from "./Utils"
+import { fonts } from "@utils"
+import { color } from "@color"
 const GlobalStyle = createGlobalStyle`
 html {
   -ms-text-size-adjust: 100%;
@@ -9,6 +10,8 @@ body {
   background: ${color.Black};
   font-family: ${fonts.Source};
   margin: 0px;
+  height: 100vh;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

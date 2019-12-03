@@ -59,6 +59,8 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
         "@config": path.resolve(__dirname, "src/config"),
         "@styles": path.resolve(__dirname, "src/styles"),
         "@utils": path.resolve(__dirname, "src/styles/Utils"),
+        "@color": path.resolve(__dirname, "src/styles/color"),
+        "@global": path.resolve(__dirname, "src/styles/GlobalStyle"),
       },
     },
   })

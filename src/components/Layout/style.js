@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import { media, color, fonts } from "../../styles/Utils"
-
+import { media, fonts } from "@utils"
+import { color } from "@color"
 export const LayoutStyle = styled.div`
   margin: 8rem auto 5rem;
   max-width: 50rem;

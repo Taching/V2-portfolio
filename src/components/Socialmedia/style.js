@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import { media, color } from "../../styles/Utils"
-
+import { media } from "@utils"
+import { color } from "@color"
 export const SocialMediaContainer = styled.ul`
   position: fixed;
   right: 70px;
@@ -41,6 +41,7 @@ export const SocialMediaContainer = styled.ul`
 
 export const MediaItem = styled.li`
   text-decoration: none;
+  cursor: pointer;
   ${media.sm`
     margin-bottom: 20px;
   `}

@@ -1,5 +1,6 @@
 import styled from "styled-components"
-import { color, media } from "../../styles/Utils"
+import { media } from "@utils"
+import { color } from "@color"
 
 export const ProjectContainer = styled.div`
   display: flex;

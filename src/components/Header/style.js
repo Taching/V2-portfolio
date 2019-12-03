@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import { getOuterSpace, color } from "../../styles/Utils"
-
+import { getOuterSpace, media } from "@utils"
+import { color } from "@color"
 export const NavContainer = styled.header`
   position: fixed;
   top: 0;
@@ -13,6 +13,9 @@ export const NavContainer = styled.header`
   pointer-events: none;
   ${getOuterSpace("padding")}
   z-index: 12;
+  ${media.md`
+    display: none;
+  `}
 `
 export const Navbar = styled.nav`
   position: relative;
@@ -42,5 +45,14 @@ export const NavItemRight = styled.li`
   .active {
     color: white;
     text-decoration: line-through ${color.MossGreen};
+  }
+  .active:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: ${color.MossGreen};
+    display: inline-block;
+    margin-right: 10px;
   }
 `

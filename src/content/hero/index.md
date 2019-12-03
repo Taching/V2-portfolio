@@ -2,7 +2,11 @@
 name: "Taching"
 intro1: "Im Takatoshi Wada"
 intro2: "A Frontend Engineer based in Tokyo"
-intro3: "I can't imagine a day without coffee"
-sub: "I currently work full-time at Freewill."
+intro3: "I never laugh until I’ve had my coffee."
+sub: "currently working full-time at Freewill."
+surf: "🏄‍♂️"
+guitar: "🎸"
+climbing: "🧗‍♂️"
+lifting: "🏋️‍♂️"
 avatar: "./hero.jpg"
 ---

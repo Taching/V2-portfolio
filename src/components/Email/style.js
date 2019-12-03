@@ -1,5 +1,6 @@
 import styled from "styled-components"
-import { media, color } from "../../styles/Utils"
+import { media } from "@utils"
+import { color } from "@color"
 
 export const EmailContainer = styled.div`
   width: 40px;

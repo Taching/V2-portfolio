@@ -1,5 +1,6 @@
 import styled from "styled-components"
-import { color, fonts } from "@utils"
+import { fonts } from "@utils"
+import { color } from "@color"
 export const BlogWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(1, 1fr);

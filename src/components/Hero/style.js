@@ -1,5 +1,6 @@
 import styled from "styled-components"
-import { color, media } from "../../styles/Utils"
+import { media } from "@utils"
+import { color } from "@color"
 import Img from "gatsby-image"
 
 export const HeroStyle = styled.div`
@@ -51,27 +52,23 @@ export const Text = styled.h1`
   font-weight: bold;
   font-size: 2rem;
   width: max-content;
+  background: ${color.Black};
+  opacity: 0.8;
   ${media.md`
     margin-bottom: 0px;
     margin: auto;
     text-align: center;
     font-weight: 100;
     font-size: 1.5rem;
+    opacity: 1;
   `}
   ${media.sm`
     font-size: 1.3rem;
   `}
 `
-export const Title = styled.p`
-  color: ${color.white};
-  font-size: 1.5rem;
-`
 export const Sub = styled.span`
-  color: ${color.Gray3};
+  color: ${color.Mint};
   font-size: 1.3rem;
-`
-export const Social = styled.ul`
-  list-style: none;
 `
 export const Bar = styled.div`
   width: 200px;
@@ -80,6 +77,19 @@ export const Bar = styled.div`
   margin-top: 20px;
   margin-bottom: 40px;
 `
+export const Likes = styled.div`
+  margin-top: 20px;
+  display: flex;
+  p {
+    color: ${color.Mint};
+    font-size: 1.2rem;
+  }
+`
+export const Emoji = styled.span`
+  margin: 0 5px;
+  font-size: 2rem;
+`
+
 export const BgText = styled.span`
   color: ${color.white};
   height: 10px;
