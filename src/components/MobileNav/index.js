@@ -1,7 +1,8 @@
 import React, { useState, useRef } from "react"
 import { useOnClickOutside } from "../../hooks/"
 import Menu from "@components/Menu"
-import Burger from "../Burger"
+import Burger from "@components/Burger"
+
 import { MobileNavStyled } from "./style"
 function MobileNav() {
   const [open, setOpen] = useState(false)
