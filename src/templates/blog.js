@@ -1,31 +1,30 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "@components/Layout"
-import { BlogLayout } from "../styles/BlogStyle"
+import BlogLayout from "@components/BlogLayout"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Head from "@components/Head"
-// export const query = graphql`
-//   query($slug: String!) {
-//     markdownRemark(fields: { slug: { eq: $slug } }) {
-//       frontmatter {
-//         title
-//       }
-//       html
-//     }
-//   }
-// `
+import { CoverContainer, Contents } from "../styles/BlogStyle"
+
+//TODO reading time in blog
+// const readingTime = require("reading-time")
 
 export const query = graphql`
   query($slug: String!) {
     contentfulBlogPost(slug: { eq: $slug }) {
       title
-      publishedDate(formatString: "MMMM Do, YYYY")
+      publishedDate(formatString: "MM.DD.YY")
+      cover {
+        file {
+          url
+        }
+      }
       body {
         json
       }
     }
   }
 `
+
 const Blog = props => {
   const options = {
     renderNode: {
@@ -37,17 +36,20 @@ const Blog = props => {
     },
   }
   return (
-    <Layout>
-      <BlogLayout>
-        <Head title={props.data.contentfulBlogPost.title} />
+    <BlogLayout>
+      <Head title={props.data.contentfulBlogPost.title} />
+      <CoverContainer>
+        <img alt="cover" src={props.data.contentfulBlogPost.cover.file.url} />
+      </CoverContainer>
+      <Contents>
+        <h4>{props.data.contentfulBlogPost.publishedDate}</h4>
         <h1>{props.data.contentfulBlogPost.title}</h1>
-        <p>{props.data.contentfulBlogPost.publishedDate}</p>
         {documentToReactComponents(
           props.data.contentfulBlogPost.body.json,
           options
         )}
-      </BlogLayout>
-    </Layout>
+      </Contents>
+    </BlogLayout>
   )
 }
 

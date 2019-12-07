@@ -1,7 +1,7 @@
 import { css } from "styled-components"
 
 export const fonts = {
-  Source: "'Source Sans Pro', sans-serif",
+  Source: "'Source Sans Pro', sans-serif, Libre Baskerville",
 }
 
 export const spaces = {

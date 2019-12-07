@@ -36,7 +36,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ["Source Sans Pro", "sans-serif"],
+          families: ["Source Sans Pro", "sans-serif", "Libre Baskerville"],
         },
       },
     },
@@ -72,6 +72,13 @@ module.exports = {
             options: {
               target: "_blank",
               rel: "nofollow noopener noreferrer",
+            },
+          },
+          {
+            resolve: `gatsby-remark-images-contentful`,
+            options: {
+              maxWidth: 650,
+              backgroundColor: { color: "#00CC83" },
             },
           },
         ],

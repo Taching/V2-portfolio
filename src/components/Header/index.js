@@ -15,13 +15,15 @@ const Header = () => {
               Home
             </Link>
           </NavItemRight>
-          <NavItemRight>
+          {/* <NavItemRight>
             <Link activeClassName="active" to="/about">
               About
             </Link>
-          </NavItemRight>
+          </NavItemRight> */}
           <NavItemRight>
-            <Link to="/blog">Blog</Link>
+            <Link activeClassName="active" partiallyActive={true} to="/blog">
+              Blog
+            </Link>
           </NavItemRight>
           <NavItemRight>
             <Link to="/blog">Resume</Link>

@@ -1,6 +1,8 @@
 import styled from "styled-components"
-import { fonts, media } from "@utils"
+import { media } from "@utils"
 import { color } from "@color"
+
+//Blog list styles
 export const BlogWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -31,7 +33,7 @@ export const BlogTitle = styled.div`
     `}
   }
   h2 {
-    font-family: ${fonts.Source};
+    font-family: auto;
     margin: 0px;
     color: ${color.white};
     line-height: 3;
@@ -52,10 +54,73 @@ export const BlogTitle = styled.div`
     border-bottom: none;
   }
 `
-
-export const BlogLayout = styled.div`
-  p,
-  h2 {
-    font-family: ${fonts.Source};
+//blog template styles
+export const CoverContainer = styled.div`
+  img {
+    position: absolute;
+    height: 500px;
+    left: 0;
+    width: 100%;
+    filter: brightness(0.7);
+    ${media.sm`
+      height: 250px;
+    `}
+  }
+`
+export const Contents = styled.div`
+  margin-top: 550px;
+  ${media.md`
+    padding: 0 4.5rem;
+  `}
+  ${media.sm`
+    padding: 0 1.5rem;
+    margin-top: 280px;
+  `}
+  h4 {
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+  }
+  h1 {
+    font-family: auto;
+    color: ${color.white};
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    text-align: center;
+    ${media.sm`
+      font-size: 1.5rem;
+    `}
+    &:after {
+      content: " ";
+      width: 100px;
+      color: ${color.MossGreen};
+      position: absolute;
+      height: 1px;
+      bottom: -20px;
+      border-bottom: 1px solid;
+    }
+  }
+  p {
+    color: white;
+    line-height: 1.8;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    ${media.sm`
+      font-size: 1rem;
+      font-weight: lighter;
+    `}
+  }
+  code {
+    color: red;
+    &:before,
+    &:after {
+      color: red;
+    }
   }
 `

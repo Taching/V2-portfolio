@@ -8,7 +8,7 @@ export const StyledMenu = styled.nav`
   justify-content: start;
   background: ${color.MossGreen};
   height: 100vh;
-  width: 90vw;
+  width: 20vw;
   text-align: left;
   padding: 2rem;
   position: fixed;
@@ -19,6 +19,9 @@ export const StyledMenu = styled.nav`
   clip-path: polygon(0 0, 100% 0, 65% 100%, 0% 100%);
   transform: translateX(-100%);
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
+  ${media.md`
+    width: 30vw;
+  `}
   ${media.sm`
     width: 78vw;
   `}

@@ -10,11 +10,11 @@ const Menu = ({ open }) => {
           Home
         </Link>
       </StyledLink>
-      <StyledLink>
+      {/* <StyledLink>
         <Link activeClassName="active" to="/about">
           About
         </Link>
-      </StyledLink>
+      </StyledLink> */}
       <StyledLink>
         <Link to="/blog">Blog</Link>
       </StyledLink>
