@@ -23,7 +23,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // trackingId: //trackingIdlater,
+        trackingId: "UA-138076379-1",
       },
     },
     {
@@ -50,8 +50,8 @@ module.exports = {
     {
       resolve: "gatsby-source-contentful",
       options: {
-        spaceId: "95jn26viorf7",
-        accessToken: "xHiGj2ggfRc2aZBXbHJAMyKyg2lB1exURGLdkmPnpu8",
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
     {
