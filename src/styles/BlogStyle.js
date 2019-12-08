@@ -58,7 +58,7 @@ export const BlogTitle = styled.div`
 export const CoverContainer = styled.div`
   img {
     position: absolute;
-    height: 500px;
+    height: 600px;
     left: 0;
     width: 100%;
     filter: brightness(0.7);
@@ -68,7 +68,10 @@ export const CoverContainer = styled.div`
   }
 `
 export const Contents = styled.div`
-  margin-top: 550px;
+  margin-top: 450px;
+  z-index: 10;
+  background-color: ${color.Black};
+  padding: 20px;
   ${media.md`
     padding: 0 4.5rem;
   `}
@@ -103,6 +106,9 @@ export const Contents = styled.div`
       bottom: -20px;
       border-bottom: 1px solid;
     }
+  }
+  hr {
+    background: ${color.MossGreen};
   }
   p {
     color: white;

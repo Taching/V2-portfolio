@@ -11,12 +11,14 @@ export const ProjectContainer = styled.div`
   transition: all 0.5s ease;
   img {
     height: 500px;
-    width: 400px;
+    width: 600px;
     position: absolute;
     left: 0px;
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    filter: grayscale(0.8);
     ${media.md`
       left: 150px;
+      width: 450px;
     `}
     ${media.sm`
       display: none;
@@ -149,4 +151,14 @@ export const MoveLeft = styled.div`
   ${media.sm`
      transition: none;
   `}
+`
+export const Git = styled.div`
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  a {
+    color: ${color.MossGreen};
+    cursor: pointer;
+    text-transform: capitalize;
+  }
 `

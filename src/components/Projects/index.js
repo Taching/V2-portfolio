@@ -5,6 +5,7 @@ import {
   Projects,
   MoveLeft,
   BgText,
+  Git,
 } from "./style"
 import { CSSTransition } from "react-transition-group"
 import "./animation.css"
@@ -15,9 +16,9 @@ class Project extends Component {
     hover: false,
   }
   render() {
-    const image1 = require("../../content/assets/image1.jpeg")
-    const image2 = require("../../content/assets/image2.jpeg")
-    const image3 = require("../../content/assets/image3.jpeg")
+    const image1 = require("../../content/assets/agogesystem.jpg")
+    const image2 = require("../../content/assets/foriio.jpg")
+    const image3 = require("../../content/assets/FWFS.jpg")
     return (
       <ProjectContainer
         onMouseOut={() => {
@@ -48,7 +49,7 @@ class Project extends Component {
             }}
           >
             <MoveLeft>
-              <a href="foriio.com">01. Agoge System</a>
+              <a href="blog/agogesystem">01. Agoge System</a>
               <p>[ React, React-Router, Node.JS, Stripe API, Sendgrid API ]</p>
             </MoveLeft>
           </Projects>
@@ -62,7 +63,7 @@ class Project extends Component {
             }}
           >
             <MoveLeft>
-              <a href="foriio.com">02. Foriio</a>
+              <a href="blog/foriio">02. Foriio</a>
               <p>[ React, Next.JS, Styled-Components, Ruby on Rails ]</p>
             </MoveLeft>
           </Projects>
@@ -76,11 +77,14 @@ class Project extends Component {
             }}
           >
             <MoveLeft>
-              <a href="foriio.com">03. Freewill</a>
+              <a href="blog/freewillfreespace">03. FWFS</a>
               <p>[ Vue.JS, Nuxt.JS, Django ]</p>
             </MoveLeft>
           </Projects>
         </ProjectList>
+        <Git>
+          <a href="https://github.com/Taching">Github Repo: @Taching</a>
+        </Git>
       </ProjectContainer>
     )
   }
