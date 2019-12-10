@@ -26,7 +26,7 @@ const Header = () => {
             </Link>
           </NavItemRight>
           <NavItemRight>
-            <Link to="/blog">Resume</Link>
+            <a href="https://drive.google.com/file/d/10ShW274XY_d-4COINSG5ys3rngPtxBgO/view?usp=sharing">Resume</a>
           </NavItemRight>
         </NavLinks>
       </Navbar>
