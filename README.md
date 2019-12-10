@@ -6,7 +6,7 @@
 
 A second Itineration of my portfolio using Gatsby
 
-![](portfolio.png)
+![](screenshot.png)
 
 
 ## Development setup
