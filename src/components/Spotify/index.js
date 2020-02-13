@@ -8,9 +8,13 @@ class Spotify extends React.Component {
   }
 
   async componentDidMount() {
-    let musicData = await API.get()
-    musicData = musicData.data.lovedtracks.track
-    console.log(musicData)
+    try {
+      let musicData = await API.get()
+      musicData = musicData.data.lovedtracks.track
+      console.log(musicData)
+    } catch (e) {
+      console.log(e)
+    }
   }
   render() {
     const { isloading, lovedtracks } = this.state
