@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "@components/Layout"
 import Head from "@components/Head"
 import Hero from "@components/Hero"
+import Spotify from "@components/Spotify"
 import Projects from "@components/Projects"
 import PropTypes from "prop-types"
 
@@ -11,6 +12,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <Head title="Home" />
       <Hero data={data.hero.edges} />
+      <Spotify />
       <Projects />
     </Layout>
   )
