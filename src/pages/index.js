@@ -12,8 +12,8 @@ const IndexPage = ({ data }) => {
     <Layout>
       <Head title="Home" />
       <Hero data={data.hero.edges} />
-      <Projects />
       <Spotify />
+      <Projects />
     </Layout>
   )
 }
