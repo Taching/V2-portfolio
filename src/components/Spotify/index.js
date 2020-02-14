@@ -1,6 +1,15 @@
 import React from "react"
 import API from "../../../utils/API"
-import { SpotifyStyle, Player } from "./style.js"
+import {
+  SpotifyStyle,
+  LastFmLogo,
+  Toptext,
+  Player,
+  RepeatIcon,
+} from "./style.js"
+import SpotifyIcon from "../../Icons/Spotify"
+import LastFm from "../../Icons/Lastfm"
+import Repeat from "../../Icons/Repeat"
 class Spotify extends React.Component {
   state = {
     isLoading: false,
@@ -18,24 +27,44 @@ class Spotify extends React.Component {
   }
   render() {
     const { songList, isLoading } = this.state
-    console.log(songList)
     return (
       <SpotifyStyle>
+        <LastFmLogo>
+          <a href="https://www.last.fm/user/taching/library">
+            <LastFm width="40px" height="40px" />
+          </a>
+        </LastFmLogo>
+        <Toptext>
+          <a href="https://open.spotify.com/user/tachingers?si=NSdCKhY9S8OKpCMs-i7O1g">
+            <p>song that I cant live without this month</p>
+            <p>On Repeat in</p>
+            <SpotifyIcon width="25px" height="25px" />
+          </a>
+        </Toptext>
         {isLoading
-          ? songList.slice(0, 3).map((song, index) => (
+          ? songList.slice(0, 5).map((song, index) => (
               <Player key={index}>
-                <p>0{index + 1}.</p>
+                <span>0{index + 1}.</span>
                 <ul>
                   <li>
                     <a href={song.url}>{song.name}</a>
                   </li>
-                  <li>
+                  <li className="artist">
                     <h4>
                       <a href={song.artist.url}>{song.artist.name}</a>
                     </h4>
                   </li>
                   <li>
-                    repeat: <span>{song.playcount}</span>
+                    <RepeatIcon>
+                      <Repeat width="30px" height="30px" />
+                      <span
+                        className={`count ${
+                          song.playcount < 10 ? "lessdigit" : ""
+                        }`}
+                      >
+                        {song.playcount}
+                      </span>
+                    </RepeatIcon>
                   </li>
                 </ul>
                 {/* <p>{Math.floor(song.duration / 60)}min.</p> */}

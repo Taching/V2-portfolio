@@ -10,4 +10,5 @@ export const color = {
   Gray6: "#454545",
   Black: "#1f211c",
   Black2: "#000",
+  Gold: "#f0e68c",
 }
