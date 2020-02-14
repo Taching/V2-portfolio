@@ -27,7 +27,7 @@ class Spotify extends React.Component {
   }
   render() {
     const { songList, isLoading } = this.state
-    return (
+    return isLoading ? (
       <SpotifyStyle>
         <LastFmLogo>
           <a href="https://www.last.fm/user/taching/library">
@@ -41,38 +41,36 @@ class Spotify extends React.Component {
             <SpotifyIcon width="25px" height="25px" />
           </a>
         </Toptext>
-        {isLoading
-          ? songList.slice(0, 5).map((song, index) => (
-              <Player key={index}>
-                <span>0{index + 1}.</span>
-                <ul>
-                  <li>
-                    <a href={song.url}>{song.name}</a>
-                  </li>
-                  <li className="artist">
-                    <h4>
-                      <a href={song.artist.url}>{song.artist.name}</a>
-                    </h4>
-                  </li>
-                  <li>
-                    <RepeatIcon>
-                      <Repeat width="30px" height="30px" />
-                      <span
-                        className={`count ${
-                          song.playcount < 10 ? "lessdigit" : ""
-                        }`}
-                      >
-                        {song.playcount}
-                      </span>
-                    </RepeatIcon>
-                  </li>
-                </ul>
-                {/* <p>{Math.floor(song.duration / 60)}min.</p> */}
-              </Player>
-            ))
-          : null}
+        {songList.slice(0, 5).map((song, index) => (
+          <Player key={index}>
+            <span>0{index + 1}.</span>
+            <ul>
+              <li>
+                <a href={song.url}>{song.name}</a>
+              </li>
+              <li className="artist">
+                <h4>
+                  <a href={song.artist.url}>{song.artist.name}</a>
+                </h4>
+              </li>
+              <li>
+                <RepeatIcon>
+                  <Repeat width="30px" height="30px" />
+                  <span
+                    className={`count ${
+                      song.playcount < 10 ? "lessdigit" : ""
+                    }`}
+                  >
+                    {song.playcount}
+                  </span>
+                </RepeatIcon>
+              </li>
+            </ul>
+            {/* <p>{Math.floor(song.duration / 60)}min.</p> */}
+          </Player>
+        ))}
       </SpotifyStyle>
-    )
+    ) : null
   }
 }
 
