@@ -36,7 +36,7 @@ class Project extends Component {
           timeout={100}
           unmountOnExit
         >
-          <img alt={this.state.alt} src={this.state.img} />
+          <img rel="preload" alt={this.state.alt} src={this.state.img} />
         </CSSTransition>
         <ProjectList>
           <Projects
