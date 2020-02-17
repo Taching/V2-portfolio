@@ -48,6 +48,7 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "react-scroll-parallax": "^2.2.0",
+    "react-spinners": "^0.8.0",
     "react-transition-group": "^4.3.0",
     "reading-time": "^1.2.0",
     "styled-components": "^4.2.0",

@@ -1,5 +1,6 @@
 import React from "react"
 import API from "../../../utils/API"
+import Loading from "@components/Loading"
 import {
   SpotifyStyle,
   LastFmLogo,
@@ -12,23 +13,23 @@ import LastFm from "../../Icons/Lastfm"
 import Repeat from "../../Icons/Repeat"
 class Spotify extends React.Component {
   state = {
-    isLoading: false,
+    isLoading: true,
     songList: [],
   }
-
   async componentDidMount() {
     try {
       let musicData = await API.get()
       musicData = musicData.data.toptracks.track
-      this.setState({ songList: musicData, isLoading: true })
+      this.setState({ songList: musicData, isLoading: false })
     } catch (e) {
       console.log(e)
     }
   }
   render() {
     const { songList, isLoading } = this.state
-    return isLoading ? (
+    return (
       <SpotifyStyle>
+        {isLoading ? <Loading isLoading /> : null}
         <LastFmLogo>
           <a href="https://www.last.fm/user/taching/library">
             <LastFm width="40px" height="40px" />
@@ -70,7 +71,7 @@ class Spotify extends React.Component {
           </Player>
         ))}
       </SpotifyStyle>
-    ) : null
+    )
   }
 }
 
