@@ -62,7 +62,7 @@ class Spotify extends React.Component {
                       song.playcount < 10 ? "lessdigit" : ""
                     }`}
                   >
-                    {song.playcount}
+                    {song.playcount < 100 ? song.playcount : "99"}
                   </span>
                 </RepeatIcon>
               </li>
